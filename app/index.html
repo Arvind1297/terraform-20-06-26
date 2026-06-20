@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP DevOps CI/CD Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #cbd5e1;
+            margin-bottom: 50px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 25px;
+            width: 250px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .success {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #22c55e;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e2e8f0;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            padding: 15px 35px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #16a34a;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>🚀 GCP DevOps Project</h1>
+        <h2>Terraform • Docker • GitHub Actions • Cloud Run</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>🏗 Terraform</h3>
+                <p>Infrastructure as Code (IaC)</p>
+            </div>
+
+            <div class="card">
+                <h3>⚙ GitHub Actions</h3>
+                <p>Automated CI/CD Pipeline</p>
+            </div>
+
+            <div class="card">
+                <h3>🐳 Docker</h3>
+                <p>Containerized Application Deployment</p>
+            </div>
+
+            <div class="card">
+                <h3>☁ Cloud Run</h3>
+                <p>Serverless Hosting on Google Cloud</p>
+            </div>
+
+        </div>
+
+        <div class="success">
+            ✅ Deployment Successful
+        </div>
+
+        <div class="details">
+            Infrastructure Provisioned with Terraform<br>
+            Container Built and Packaged using Docker<br>
+            Continuous Integration & Deployment via GitHub Actions<br>
+            Application Hosted on Google Cloud Run
+        </div>
+
+        <button class="btn">
+            🎉 CI/CD Pipeline Completed Successfully
+        </button>
+
+        <div class="footer">
+            Powered by Google Cloud Platform & DevOps Best Practices
+        </div>
+
+    </div>
+</body>
+</html>
