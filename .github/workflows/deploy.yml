@@ -22,9 +22,15 @@ jobs:
         with:
           workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
+          token_format: access_token
 
       - name: Setup GCloud
         uses: google-github-actions/setup-gcloud@v2
+
+      - name: Check Auth
+        run: |
+          gcloud auth list
+          gcloud config list account
 
       - name: Configure Docker
         run: |
@@ -48,4 +54,3 @@ jobs:
             --region us-central1 \
             --platform managed \
             --allow-unauthenticated
-
